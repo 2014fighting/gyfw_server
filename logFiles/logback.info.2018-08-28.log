@@ -1,0 +1,214 @@
+Starting GyfwApplication on DESKTOP-8ARQODM with PID 19856 (F:\JavaProject\gyfw\target\classes started by ywq19 in F:\JavaProject\gyfw)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@327514f: startup date [Tue Aug 28 16:28:41 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e466e609] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8081 (http)
+Initializing ProtocolHandler ["http-nio-8081"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.31
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;E:\oracleDb\product\11.2.0\dbhome_1\bin;E:\开发软件安装\oracle\product\11.2.0\dbhome_1\bin;%Syst;mRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\开发;件安装\sql2008r2\100\DTS\Binn\;E:;开发软件安装\sql2008r2\100\Tools\Binn\VSShell\Common7\IDE\;C:\Pr;gram Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;E:\开发软件安装\svn\bin;gram Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;E:\开发软件安装\VisualSVN\bin;%USER;ROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;E:\开发软件安装\sql2008r2\100\Tools\Binn\;E:\开发软件安装\sql2008r2\100\DTS\Binn\;E:\开发软件安装\sql2008r2\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\nodejs\;C:\Program Files (x86)\dotnet\;C:\WINDOWS\System32\OpenSSH\;E:\开发软件安装\vscode\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Users\ywq19\AppData\Local\Microsoft\WindowsApps;E:\开发软件安装\vscode\Microsoft VS Code\bin;C:\Users\ywq19\AppData\Roaming\npm;D:\maven\apache-maven-3.5.4\bin;;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1367 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.17.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@327514f: startup date [Tue Aug 28 16:28:41 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/account/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.wenqing.gyfw.controller.AccountController.login(java.lang.String,java.lang.String)
+Mapped "{[/appoint/hello1],methods=[GET]}" onto public java.lang.String com.wenqing.gyfw.controller.AppointmentController.getListOne()
+Mapped "{[/appoint/list],methods=[GET]}" onto public com.wenqing.gyfw.viewobject.ResultVO com.wenqing.gyfw.controller.AppointmentController.getList() throws java.lang.Exception
+Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.wenqing.gyfw.controller.ThymeleafController.index(org.springframework.ui.Model)
+Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.wenqing.gyfw.controller.ThymeleafController.login(org.springframework.ui.Model)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in exceptionHandle
+Adding welcome page template: index
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8081"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8081 (http) with context path ''
+Started GyfwApplication in 4.195 seconds (JVM running for 4.928)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+请求开始~~~~~~~~~~~~~~~~
+URL=http://localhost:8081/appoint/list
+Method=GET
+IP=0:0:0:0:0:0:0:1
+CLass.Method=com.wenqing.gyfw.controller.AppointmentController.getList()
+Args={}
+111111111111111111111111
+HHH000397: Using ASTQueryTranslatorFactory
+请求结束~~~~~~~~~~~~~~~Tue Aug 28 16:29:27 CST 2018
+请求开始~~~~~~~~~~~~~~~~
+URL=http://localhost:8081/appoint/list
+Method=GET
+IP=0:0:0:0:0:0:0:1
+CLass.Method=com.wenqing.gyfw.controller.AppointmentController.getList()
+Args={}
+111111111111111111111111
+请求结束~~~~~~~~~~~~~~~Tue Aug 28 16:29:37 CST 2018
+Starting GyfwApplication on DESKTOP-8ARQODM with PID 5652 (F:\JavaProject\gyfw\target\classes started by ywq19 in F:\JavaProject\gyfw)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@327514f: startup date [Tue Aug 28 16:32:18 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e967f329] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8081 (http)
+Initializing ProtocolHandler ["http-nio-8081"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.31
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;E:\oracleDb\product\11.2.0\dbhome_1\bin;E:\开发软件安装\oracle\product\11.2.0\dbhome_1\bin;%Syst;mRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\开发;件安装\sql2008r2\100\DTS\Binn\;E:;开发软件安装\sql2008r2\100\Tools\Binn\VSShell\Common7\IDE\;C:\Pr;gram Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;E:\开发软件安装\svn\bin;gram Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;E:\开发软件安装\VisualSVN\bin;%USER;ROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;E:\开发软件安装\sql2008r2\100\Tools\Binn\;E:\开发软件安装\sql2008r2\100\DTS\Binn\;E:\开发软件安装\sql2008r2\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\nodejs\;C:\Program Files (x86)\dotnet\;C:\WINDOWS\System32\OpenSSH\;E:\开发软件安装\vscode\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Users\ywq19\AppData\Local\Microsoft\WindowsApps;E:\开发软件安装\vscode\Microsoft VS Code\bin;C:\Users\ywq19\AppData\Roaming\npm;D:\maven\apache-maven-3.5.4\bin;;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1420 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.17.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Starting GyfwApplication on DESKTOP-8ARQODM with PID 14820 (F:\JavaProject\gyfw\target\classes started by ywq19 in F:\JavaProject\gyfw)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1165b38: startup date [Tue Aug 28 16:32:23 CST 2018]; root of context hierarchy
+Starting GyfwApplication on DESKTOP-8ARQODM with PID 15464 (F:\JavaProject\gyfw\target\classes started by ywq19 in F:\JavaProject\gyfw)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1165b38: startup date [Tue Aug 28 16:32:28 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11634ae0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8081 (http)
+Initializing ProtocolHandler ["http-nio-8081"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.31
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;E:\oracleDb\product\11.2.0\dbhome_1\bin;E:\开发软件安装\oracle\product\11.2.0\dbhome_1\bin;%Syst;mRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\开发;件安装\sql2008r2\100\DTS\Binn\;E:;开发软件安装\sql2008r2\100\Tools\Binn\VSShell\Common7\IDE\;C:\Pr;gram Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;E:\开发软件安装\svn\bin;gram Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;E:\开发软件安装\VisualSVN\bin;%USER;ROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;E:\开发软件安装\sql2008r2\100\Tools\Binn\;E:\开发软件安装\sql2008r2\100\DTS\Binn\;E:\开发软件安装\sql2008r2\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\nodejs\;C:\Program Files (x86)\dotnet\;C:\WINDOWS\System32\OpenSSH\;E:\开发软件安装\vscode\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Users\ywq19\AppData\Local\Microsoft\WindowsApps;E:\开发软件安装\vscode\Microsoft VS Code\bin;C:\Users\ywq19\AppData\Roaming\npm;D:\maven\apache-maven-3.5.4\bin;;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1637 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.17.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1165b38: startup date [Tue Aug 28 16:32:28 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/account/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.wenqing.gyfw.controller.AccountController.login(java.lang.String,java.lang.String)
+Mapped "{[/appoint/list],methods=[GET]}" onto public com.wenqing.gyfw.viewobject.ResultVO com.wenqing.gyfw.controller.AppointmentController.getList() throws java.lang.Exception
+Mapped "{[/appoint/hello1],methods=[GET]}" onto public java.lang.String com.wenqing.gyfw.controller.AppointmentController.getListOne()
+Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.wenqing.gyfw.controller.ThymeleafController.index(org.springframework.ui.Model)
+Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.wenqing.gyfw.controller.ThymeleafController.login(org.springframework.ui.Model)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in exceptionHandle
+Adding welcome page template: index
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8081"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8081 (http) with context path ''
+Started GyfwApplication in 4.512 seconds (JVM running for 5.244)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+aop请求开始~~~~~~~~~~~~~~~~
+URL=http://localhost:8081/appoint/list
+Method=GET
+IP=0:0:0:0:0:0:0:1
+CLass.Method=com.wenqing.gyfw.controller.AppointmentController.getList()
+Args={}
+logInfo测试222222222222
+HHH000397: Using ASTQueryTranslatorFactory
+aop请求结束~~~~~~~~~~~~~~~Tue Aug 28 16:32:49 CST 2018
+Starting GyfwApplication on DESKTOP-8ARQODM with PID 11776 (F:\JavaProject\gyfw\target\classes started by ywq19 in F:\JavaProject\gyfw)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1165b38: startup date [Tue Aug 28 18:04:16 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$45f26619] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8083 (http)
+Initializing ProtocolHandler ["http-nio-8083"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.31
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;E:\oracleDb\product\11.2.0\dbhome_1\bin;E:\开发软件安装\oracle\product\11.2.0\dbhome_1\bin;%Syst;mRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\开发;件安装\sql2008r2\100\DTS\Binn\;E:;开发软件安装\sql2008r2\100\Tools\Binn\VSShell\Common7\IDE\;C:\Pr;gram Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;E:\开发软件安装\svn\bin;gram Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;E:\开发软件安装\VisualSVN\bin;%USER;ROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;E:\开发软件安装\sql2008r2\100\Tools\Binn\;E:\开发软件安装\sql2008r2\100\DTS\Binn\;E:\开发软件安装\sql2008r2\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\nodejs\;C:\Program Files (x86)\dotnet\;C:\WINDOWS\System32\OpenSSH\;E:\开发软件安装\vscode\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Users\ywq19\AppData\Local\Microsoft\WindowsApps;E:\开发软件安装\vscode\Microsoft VS Code\bin;C:\Users\ywq19\AppData\Roaming\npm;D:\maven\apache-maven-3.5.4\bin;;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1764 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.17.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1165b38: startup date [Tue Aug 28 18:04:16 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/account/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.wenqing.gyfw.controller.AccountController.login(java.lang.String,java.lang.String)
+Mapped "{[/appoint/list],methods=[GET]}" onto public com.wenqing.gyfw.viewobject.ResultVO com.wenqing.gyfw.controller.AppointmentController.getList() throws java.lang.Exception
+Mapped "{[/appoint/hello1],methods=[GET]}" onto public java.lang.String com.wenqing.gyfw.controller.AppointmentController.getListOne()
+Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.wenqing.gyfw.controller.ThymeleafController.index(org.springframework.ui.Model)
+Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.wenqing.gyfw.controller.ThymeleafController.login(org.springframework.ui.Model)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in exceptionHandle
+Adding welcome page template: index
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8083"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8083 (http) with context path ''
+Started GyfwApplication in 5.302 seconds (JVM running for 6.016)
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m46s874ms916µs).
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m27s760ms553µs333ns).
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h47m6s9ms171µs111ns).
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m40s284ms609µs778ns).
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m36s81ms599µs555ns).
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m45s23ms379µs111ns).
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m6s375ms153µs778ns).
+HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m30s653ms427µs556ns).

@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: abc123
+    url: jdbc:mysql://127.0.0.1:3306/gyfw?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+  jpa:
+    show-sql: true
+  mvc:
+    view:
+      prefix:
+
+thymeleaf:
+    cache: false #开发阶段，建议关闭Thymeleaf的缓存
+    mode: LEGACYHTML5 #使用遗留的html5以去掉对html标签的校验
+server:
+  port: 80
+
